@@ -1,0 +1,85 @@
+.scanner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.viewport {
+    width: 90%; /* Default width as a percentage of the screen */
+    max-width: 640px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 4 / 3; /* Ensure proper proportions for the video feed */
+    background: #000;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+     /* Add spacing below the viewport for the close button */
+}
+
+/* Close button */
+.close-scanner {
+    background: #f39c12;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-scanner:hover {
+    background: #d87d00;
+}
+
+/* Adjust for medium screens (tablets) */
+@media (max-width: 768px) {
+    .viewport {
+        width: 100%; /* Use full width of the screen */
+        max-width: 620px; /* Adjust the maximum width for tablets */
+    }
+
+    .close-scanner {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* Scanner Feedback */
+.scanning-message {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Adjust for smaller screens (phones) */
+@media (max-width: 480px) {
+    .viewport {
+        width: 100%; /* Reduce the viewport size to fit within smaller screens */
+        max-width: 400px; 
+        /* Cap the maximum width for very small devices */
+         /* Keep the aspect ratio consistent */
+         aspect-ratio: 4 / 3;
+    }
+
+    .close-scanner {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        margin-top: 10px; /* Add spacing above the button for better separation */
+    }
+}

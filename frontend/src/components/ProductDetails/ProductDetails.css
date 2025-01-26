@@ -1,0 +1,141 @@
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto; /* Handle scrolling for long content */
+}
+
+/* Popup Box */
+.popup-details {
+    background: #fff; /* White background */
+    color: #333;
+    border-radius: 10px;
+    padding: 15px; /* Reduced padding for a more compact look */
+    width: 80%; /* Slightly smaller width */
+    max-width: 500px; /* Adjusted max width for a smaller appearance */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden; /* Prevent overflow of inner content */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: #f39c12; /* Highlight on hover */
+}
+
+/* Content Inside the Box */
+.popup-details img {
+    width: 100%; /* Ensure the image takes full width */
+    max-height: 250px; /* Reduced height for compact display */
+    object-fit: contain; /* Ensure proper scaling */
+    margin-bottom: 15px; /* Reduced margin for a tighter look */
+    border-radius: 8px;
+}
+
+.popup-details h2,
+.popup-details h3 {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.popup-details h2 {
+    font-size: 22px; /* Slightly smaller heading */
+    text-align: center;
+}
+
+.popup-details h3 {
+    font-size: 18px; /* Slightly smaller subheading */
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup-details p {
+    margin: 8px 0;
+    font-size: 14px; /* Reduced font size */
+    color: #666;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .popup-details {
+        padding: 12px;
+        width: 90%; /* Wider for smaller screens */
+    }
+
+    .popup-details h2 {
+        font-size: 20px;
+    }
+
+    .popup-details h3 {
+        font-size: 16px;
+    }
+
+    .popup-details p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .popup-details {
+        padding: 10px;
+        width: 95%; /* Full width for very small screens */
+    }
+
+    .popup-details h2 {
+        font-size: 18px;
+    }
+
+    .popup-details h3 {
+        font-size: 16px;
+    }
+
+    .popup-details p {
+        font-size: 12px;
+    }
+
+    .popup-details img {
+        max-height: 200px; /* Smaller image height for compact devices */
+    }
+}
