@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -56,4 +57,5 @@ app.post("/api/products", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+const MONGO_URI= process.env.MONGOURI;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
