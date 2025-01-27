@@ -13,7 +13,7 @@ const ProductList = ({ showScanner, onCloseScanner }) => {
 
   // Fetch all products on load
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://assignment-backend-hs91.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => {
@@ -26,7 +26,7 @@ const ProductList = ({ showScanner, onCloseScanner }) => {
     console.log("Detected barcode:", barcode); // Log the detected barcode
     try {
       const response = await fetch(
-        `http://localhost:5000/api/products/barcode/${barcode.trim()}`
+        `https://assignment-backend-hs91.onrender.com/api/products/barcode/${barcode.trim()}`
       ); // Trim barcode
 
       if (response.ok) {
