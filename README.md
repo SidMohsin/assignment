@@ -171,11 +171,11 @@ MongoDB database for storing product details.
 
 ![Screenshot 2025-01-27 123359](https://github.com/user-attachments/assets/b3094b54-ade3-43e4-896f-2c7315c51552)
 
-* **If Product is in Database**
+* **If the product is in the Database**
   
     ![Screenshot 2025-01-27 123442](https://github.com/user-attachments/assets/a191a3e1-6c51-437e-a207-437a078b6137)
 
-* **If Product is not in Database**
+* **If the product is not in the  Database**
    
    ![Screenshot 2025-01-27 123517](https://github.com/user-attachments/assets/1b81206c-8c86-4838-ac87-dab39fe18b67)
 
