@@ -151,5 +151,31 @@ MongoDB database for storing product details.
 
 
 
+  ## Screenshots
 
+  ### Homepage
+    
+![Screenshot 2025-01-27 123145](https://github.com/user-attachments/assets/00a53e41-b269-4167-91ff-f2e080fe7fa4)
+
+
+![Screenshot 2025-01-27 123233](https://github.com/user-attachments/assets/d8d20c42-b76a-48f3-b401-e47cca8ba934)
+
+![Screenshot 2025-01-27 124712](https://github.com/user-attachments/assets/f7126354-6476-4ad3-8819-3ece9fd25e48)
+
+
+### Product Details View
+
+![Screenshot 2025-01-27 123304](https://github.com/user-attachments/assets/7a9527c5-fc92-45e3-8efa-21c84a3c5fc3)
+
+### Barcode Scanner
+
+![Screenshot 2025-01-27 123359](https://github.com/user-attachments/assets/b3094b54-ade3-43e4-896f-2c7315c51552)
+
+* **If Product is in Database**
+  
+    ![Screenshot 2025-01-27 123442](https://github.com/user-attachments/assets/a191a3e1-6c51-437e-a207-437a078b6137)
+
+* **If Product is not in Database**
+   
+   ![Screenshot 2025-01-27 123517](https://github.com/user-attachments/assets/1b81206c-8c86-4838-ac87-dab39fe18b67)
 
